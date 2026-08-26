@@ -111,7 +111,7 @@ try {
         Write-Host 'CLIENT=ALREADY_INSTALLED_CURRENT'
     }
     else {
-        Write-Host 'CLIENT=INSTALLING_VERIFIED_V9'
+        Write-Host 'CLIENT=INSTALLING_VERIFIED_V10'
         New-Item -ItemType Directory -Path $tempRoot -Force | Out-Null
         $selfText = [IO.File]::ReadAllText($env:YH_SELF,[Text.Encoding]::UTF8)
         $beginMarker = ':__CLIENT_' + 'BEGIN__'
@@ -169,7 +169,7 @@ try {
 
     Write-Host 'STATUS=AUTHORIZED_AND_CLIENT_READY'
     Write-Host ('ROLE=' + $role)
-    Write-Host 'CLIENT_RELEASE=branch-client-v9'
+    Write-Host 'CLIENT_RELEASE=branch-client-v10'
     Write-Host 'TOKEN_STORED=WINDOWS_DPAPI_CURRENT_USER'
 
     if ($serverIsBlank) {
