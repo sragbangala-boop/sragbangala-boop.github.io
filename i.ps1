@@ -2,9 +2,9 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-$source = 'https://raw.githubusercontent.com/sragbangala-boop/sragbangala-boop.github.io/03fab294760f49492bae5274becff32eb7f8555b/fengongsi-authorize.bat'
-$expectedBytes = 55992
-$expectedSha256 = '5101BD8D8ECF8A00EF955A9C8A9EE10C15A43F5A5C566A5C52BF3431D81B0FE8'
+$source = 'https://raw.githubusercontent.com/sragbangala-boop/sragbangala-boop.github.io/2d6c50f09698557e8091ff553d6539c2f4ff0949/fengongsi-authorize.bat'
+$expectedBytes = 55994
+$expectedSha256 = '047C9658FE668771F2A24EB82667BDA3EE6E72659711B31166EBA79B81980D8E'
 $destinationDirectory = 'C:\hotfix'
 $destination = Join-Path $destinationDirectory 'fengongsi-authorize.bat'
 $temporary = Join-Path $env:TEMP ('fengongsi-authorize-' + [guid]::NewGuid().ToString('N') + '.bat')
