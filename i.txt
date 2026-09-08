@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $source = 'https://raw.githubusercontent.com/sragbangala-boop/sragbangala-boop.github.io/main/fengongsi-authorize.bat'
-$expectedBytes = 76095
-$expectedSha256 = '7250F8B7E55B879EAFEFD2A9991B3EB96424A81463ECDD219187BD96A39828C3'
+$expectedBytes = 76099
+$expectedSha256 = '0D64112532564B5483DF1EC5EB8D16F1E58285EA4DFBFD35290195A3D430E16A'
 $destinationDirectory = 'C:\hotfix'
 $destination = Join-Path $destinationDirectory 'fengongsi-authorize.bat'
 $temporary = Join-Path $env:TEMP ('fengongsi-authorize-' + [guid]::NewGuid().ToString('N') + '.bat')
